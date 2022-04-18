@@ -1,0 +1,343 @@
+@import url('reset.css');
+
+body{
+    background-color: #232845;
+}
+
+/* Grid大爸爸 */
+.container {  
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr) ;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    grid-template-areas:
+      " container_top container_top container_top container_top container_top container_top container_top container_top container_top container_top container_top container_top"
+      " container_top container_top container_top container_top container_top container_top container_top container_top container_top container_top container_top container_top"
+      " main main main main main main main main main main main main"
+      " footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.container_top{
+    position: relative;
+    grid-area: container_top;
+    width: 1135px;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(12,1fr) ;
+    grid-template-rows: auto ;
+    grid-template-areas:
+    " logo nav nav nav nav nav nav nav nav nav nav nav"
+    " banner banner banner banner banner banner banner banner banner banner banner banner";
+}
+
+
+  /* 左上LOGO */
+  .logo {}
+
+  .logo a{}
+         
+  .logo img{
+      width: 125px;
+      position: absolute;
+      top:30px;
+      left:0px;
+      z-index: 1;
+  }
+  
+    /* 選單列 */
+  .nav {
+      grid-area: nav; 
+      width: 950px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: auto;
+  }
+  
+  .navbar{
+      display: flex;
+      background-image: url(../img/about/nav.png);
+      background-repeat: no-repeat;  
+      background-size: contain;
+      justify-content: flex-end;
+  }
+  
+  .navbar li{
+      flex-grow: 1;
+  }
+  
+  .navbar a{
+      display: block;
+      line-height: 50px;
+      text-decoration: none;
+      color: #BD9F6D;
+      text-align: center;
+      font-weight: bold;
+  }
+
+  /* 巫師商城Banner */
+.banner {
+    grid-area: banner;
+    width: 1135px;
+    height: 340px;
+    margin: 0 auto;
+    background-image: url("../img/shop/banner.png");
+    background-size:contain ;
+ }
+
+ /* 巫師商城:導覽列 */
+.main_top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main_top a{
+    text-decoration: none;
+}
+.main_top img{
+    width: 10px;
+    height: 20px;
+    margin: 0 15px;
+}
+.main_top h5{
+    font-size: 18px;
+    color: #BD9F6D; 
+}
+.main_top h6{
+    font-size: 18px;
+    color: white;
+}
+
+/* 商品欄位 */
+.main{
+    grid-area: main;
+    width: 1135px;
+    margin: 0 auto;
+}
+
+.main_mid{
+    width: 1135px;
+    margin: 0 auto;
+}
+
+.list{
+    position: relative;
+    margin-top: 60px;
+}
+
+.list h2{
+    font-size: 40px;
+    color: #BD9F6D;
+    font-weight: bold;
+    margin-left: 120px;
+}
+/* 套組icon */
+.set::before{
+    content: "";
+    width: 102px;
+    height: 102px;
+    background-image: url(../img/shop/set.png);
+    background-size: contain;
+    position: absolute;
+    top:-20px;
+    left:0;
+}
+/* 魔杖icon */
+.star::before{
+    content: "";
+    width: 102px;
+    height: 102px;
+    background-image: url(../img/shop/star.png);
+    background-size: contain;
+    position: absolute;
+    top:-20px;
+    left:0;
+}
+/* 魔藥icon */
+.poison::before{
+    content: "";
+    width: 102px;
+    height: 102px;
+    background-image: url(../img/shop/poison.png);
+    background-size: contain;
+    position: absolute;
+    top:-20px;
+    left:0;
+}
+/* 其他icon */
+.ruby::before{
+    content: "";
+    width: 102px;
+    height: 102px;
+    background-image: url(../img/shop/ruby.png);
+    background-size: contain;
+    position: absolute;
+    top:-20px;
+    left:0;
+}
+
+.shopmore{
+    text-decoration: none;
+    display: block;
+    text-align: end; 
+}
+
+.list h4{
+    font-size: 16px;
+    color: #BD9F6D;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.underline{
+    width: 90%;
+    height: 1px;
+    border-top:1px solid #BD9F6D;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: 112px;
+}
+
+.list ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.list li{}
+
+.list li a{
+    text-decoration: none;
+}
+
+.list li img{
+    width: 358px;
+    height: 269px;
+    outline: 1px solid #BD9F6D;
+    display: block;
+}
+
+.product{
+    position: relative;
+}
+
+.product h3{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.product span{
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.product span::after{
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/shop/coin.png);
+    position: absolute;
+    top:25px;
+    left:65px;
+}
+
+
+ /* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #151A2D;
+    margin-top: 50px;
+}
+/* footer:上半部 */
+.footer_top{
+    width: 1135px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer_top_left{
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.footer_logo{
+    width: 145px;
+    height: 210px;
+    margin-left: 150px;
+}
+
+.footer_top_left h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #BD9F6D;
+    opacity: 0.6;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.footer_top_left span{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    opacity: 0.6;
+    line-height: 1.6;
+}
+
+.footer_top_right{
+    align-self: flex-end;
+    margin-right: 150px;
+    margin-bottom: 10px;
+}
+
+.footer_top_right ul{
+    display: flex;
+}
+
+.footer_top_right li{
+    margin-right: 30px;
+}
+
+.footer_top_right img{
+    width: 40px;
+    height: 40px;
+}
+
+  /* footer:下半部 */
+.footer_bottom{
+    width: 1135px;
+    margin: 0 auto;
+    border-top: 0.5px solid #BD9F6D;
+}
+
+.footer_bottom h3{
+    font-size: 10px;
+    color: #BD9F6D;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer_bottom p{
+    font-size: 10px;
+    color: #BD9F6D;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+/* 動畫互動效果 */
+.navbar a:hover{
+    color: white;
+}
