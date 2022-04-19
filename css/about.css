@@ -457,6 +457,7 @@ body{
 /* 動畫互動效果 */
 .navbar a:hover{
     color: white;
+    transform: scale(1.2);
 }
 
   
