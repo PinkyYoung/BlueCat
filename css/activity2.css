@@ -270,32 +270,31 @@ body{
     width: 1135px;
     height: 297px;
     margin-bottom: 30px;
-    transition: 5s;
+    transition: 3s;
 }
 
 .bottom li{
-    transition: 2s;
-    width: 100%;
+    transition: 1.5s;
+    /* width: 100%; */
     flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
 }
 
 .class2{
     background-image: url("../img/activity2/class2.png");
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .class3{
     background-image: url("../img/activity2/class3.png");
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .class4{
     background-image: url("../img/activity2/class4.png");
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -307,14 +306,12 @@ body{
     color: #BD9F6D;
     font-size: 24px;
     font-weight: bold;
-    /* width: 567.5px; */
-    /* width: 100%; */
-    width: 300px;
-    margin: 0 auto;
+    /* width: 250px; */
+    width: 100%;
     text-align: center;
     line-height: 54px;
-    display: none;
-    background-color: rgba(21, 26, 45, 0.9)
+    opacity: 0;
+    background-color: rgba(21, 26, 45, 0.7);
 }
 
 /* bottom動畫效果 */
@@ -323,7 +320,12 @@ body{
     /* transform: scale(1.1); */
     box-shadow: 10px 10px 10px #151A2D;
 }
-/* 隱藏文案 */
+
+.bottom li:hover a{
+    opacity: 1;
+}
+
+/* 隱藏標題 */
 .class2:hover .class2_text{
     display: block;
 }
