@@ -4,6 +4,10 @@ body{
     background-color: #232845;
 }
 
+.container {  
+    margin: 0 auto;
+}
+
 /* 口口口口口口口口口口第一區塊口口口口口口口口口口*/
 .header{
     background-color: #232845;
@@ -120,6 +124,7 @@ body{
 
 .main_1{
     background-color: #151A2D;
+    min-width: 1135px;
 }
 
 /* 校園新聞 */
@@ -243,6 +248,7 @@ body{
 .footer {
     background-color: #151A2D;
     padding-top: 30px;
+    min-width: 1135px;
 }
 /* footer:上半部 */
 .footer_top{
