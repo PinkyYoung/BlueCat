@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=in, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .block{
+            width: 250px;
+            margin: 0 auto;
+        }
+        ul{
+            width: 250px;
+            margin: 0 auto;
+        }
+    </Style>
+</head>
+<body>
+    <div class="block">
+        <input type="text">
+        <button>Add</button>
+    </div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <script>
+        const button = document.querySelector('button');
+        const input = document.querySelector('input');
+        const ul = document.querySelector('ul');
+        button.addEventListener('click', e =>{
+            const{value} = input;
+            const htmlText = ˋ<li>${value}</li>ˋ;
+            ul.insertAdjacentHTML('beforeend', htmlText);
+            input.value = "";
+        });
+    </script>
+</body>
+</html>
