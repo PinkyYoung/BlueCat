@@ -124,14 +124,129 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.main_mid_pic{
-    display: flex;
-    margin-bottom: 50px;
-}
-.main img{
+
+.main_mid img{
     display: block;
+    width: 284px;
 }
 
+.card_container{
+    display: flex;
+    height: 721px;
+    margin-bottom: 50px;
+}
+/* 紅色卡片 */
+.red1{
+    width: 284px;
+    position: relative;
+}
+
+.red1_front{
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.red1_back{
+    position: absolute;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.red1:hover .red1_front{
+    transform: rotateY(-180deg);
+}
+
+.red1:hover .red1_back{
+    transform: rotateY(0deg);
+}
+
+/* 綠色卡片 */
+
+.green2{
+    width: 284px;
+    position: relative;
+}
+
+.green2_front{
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.green2_back{
+    position: absolute;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.green2:hover .green2_front{
+    transform: rotateY(-180deg);
+}
+
+.green2:hover .green2_back{
+    transform: rotateY(0deg);
+}
+
+/* 藍色卡片 */
+.blue3{
+    width: 284px;
+    position: relative;
+}
+
+.blue3_front{
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.blue3_back{
+    position: absolute;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.blue3:hover .blue3_front{
+    transform: rotateY(-180deg);
+}
+
+.blue3:hover .blue3_back{
+    transform: rotateY(0deg);
+}
+
+/* 黃色卡片 */
+.yellow4{
+    width: 284px;
+    position: relative;
+}
+
+.yellow4_front{
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+
+.yellow4_back{
+    position: absolute;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+
+.yellow4:hover .yellow4_front{
+    transform: rotateY(-180deg);
+}
+
+.yellow4:hover .yellow4_back{
+    transform: rotateY(0deg);
+}
 
  /* Footer */
 .footer {
