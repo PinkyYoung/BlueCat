@@ -145,14 +145,14 @@ body{
     position: absolute;
     transform: rotateY(0deg);
     backface-visibility: hidden;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .red1_back{
     position: absolute;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .red1:hover .red1_front{
@@ -174,14 +174,14 @@ body{
     position: absolute;
     transform: rotateY(0deg);
     backface-visibility: hidden;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .green2_back{
     position: absolute;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .green2:hover .green2_front{
@@ -202,14 +202,14 @@ body{
     position: absolute;
     transform: rotateY(0deg);
     backface-visibility: hidden;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .blue3_back{
     position: absolute;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .blue3:hover .blue3_front{
@@ -230,14 +230,14 @@ body{
     position: absolute;
     transform: rotateY(0deg);
     backface-visibility: hidden;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .yellow4_back{
     position: absolute;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .yellow4:hover .yellow4_front{
