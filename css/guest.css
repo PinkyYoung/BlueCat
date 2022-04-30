@@ -128,6 +128,25 @@ body{
 
 .level li{}
 
+.level button{
+    text-decoration: none;
+    font-size: 20px;
+    width: 190px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    line-height: 45px;
+    background-color: #BD9F6D;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 0.5px solid #151A2D;
+}
+.level button:focus{
+    background-color: #151A2D;
+    color: #BD9F6D;
+    border: 0.5px solid #BD9F6D;
+}
 .level a{
     text-decoration: none;
     font-size: 20px;
@@ -179,25 +198,76 @@ body{
     height: 630px;
     margin-top: 50px;
     background-image: url("../img/quest/board.png");
+   background-size: contain;
+   position: relative;
+}
+/* 任務單照片 */
+
+.main_left img:active{
+    transform: scale(1.1);
 }
 
-.main_left img{
-    width: 190px;
-    height: 130px;
-    margin-left: 75px;
-    margin-top: 110px;
+.small_img_1{
+    width: 30%;
+    transform: rotate(-7deg);
+    position: absolute;
+    top:70px;
+    left: 70px;
+    cursor: pointer;
+}
+
+.small_img_2{
+    width: 30%;
+    transform: rotate(1deg);
+    position: absolute;
+    top:180px;
+    left: 280px;
+    cursor: pointer;
+}
+
+.small_img_3{
+    width: 30%;
+    transform: rotate(10deg);
+    position: absolute;
+    top:60px;
+    left: 480px;
+    cursor: pointer;
+}
+
+.small_img_4{
+    width: 30%;
+    transform: rotate(-4deg);
+    position: absolute;
+    top:350px;
+    left: 90px;
+    cursor: pointer;
+}
+
+.small_img_5{
+    width: 30%;
+    transform: rotate(4deg);
+    position: absolute;
+    top:360px;
+    left: 420px;
+    cursor: pointer;
 }
 
 /* 任務看板-右半區-任務內容 */
 .main_right{
+    min-height: 600px;
+    width: 300px;
     float: right;
     border: 6px solid #BD9F6D;
     border-radius: 17px;
     padding: 10px;
     margin-top: 50px;
+    top:0px;
+    left: 0px;
 }
 
-.main_right img{}
+.big_img{
+    max-width: 100%;
+}
 
 .main_right ul{
     display: flex;
@@ -226,7 +296,7 @@ body{
     font-size: 20px;
     color: #BD9F6D;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .main_right p{
@@ -234,6 +304,14 @@ body{
     color: white;
     font-weight: bold;
     line-height: 1.6;
+}
+
+.main_right h4{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-top: 80px;
 }
 
 .main_right a{

@@ -134,6 +134,7 @@ body{
     font-weight: bold;
     margin-left: 120px;
 }
+
 /* 套組icon */
 .set::before{
     content: "";
@@ -207,43 +208,63 @@ body{
     justify-content:space-between;
 }
 
-.list li{}
+.list li{
+    position: relative;
+    overflow: hidden;
+}
+
+.product_note{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    background-color:hsla(0, 0%, 50%, .5);
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+
+/* 商品文字滑入特效 */
+.list li:hover .product_note{
+    transform: translateY(5%);
+}
 
 .list li a{
     text-decoration: none;
 }
 
 .list li img{
-    width: 358px;
-    height: 269px;
+    max-width: 358px;
     outline: 1px solid #BD9F6D;
     display: block;
+    transition: 0.8s;
+}
+/* 商品圖放大特效 */
+.list li img:hover{
+    transform: scale(1.1);
 }
 
-.product{
-    position: relative;
-}
-
-.product h3{
+.product_note h3{
     font-size: 24px;
     color: white;
     font-weight: bold;
 }
 
 
-.product span{
+.product_note span{
     font-size: 32px;
     color: white;
     font-weight: bold;
 }
 
-.product span::after{
+.product_note span::after{
     content: "";
     width: 28px;
     height: 28px;
     background-image: url(../img/shop/coin.png);
     position: absolute;
-    top:25px;
+    top:35px;
     left:65px;
 }
 

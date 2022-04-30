@@ -300,18 +300,18 @@ body{
 }
 
 .bottom a{
-    outline: 1px solid #BD9F6D;
+    /* outline: 1px solid #BD9F6D; */
     display: block;
     text-decoration: none;
-    color: #BD9F6D;
+    color: white;
     font-size: 24px;
     font-weight: bold;
-    /* width: 250px; */
     width: 100%;
     text-align: center;
     line-height: 54px;
     opacity: 0;
-    background-color: rgba(21, 26, 45, 0.7);
+    background-color:hsla(0, 0%, 50%, .5);
+
 }
 
 /* bottom動畫效果 */

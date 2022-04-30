@@ -308,12 +308,28 @@ body{
     margin-bottom: 50px;
 }
 
+/* 學校機構漂浮動畫 */
+@keyframes floating1 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 .pic1{
     position: absolute;
     top:55px;
     right:0px;
     left:200px;
     bottom:0px;
+    animation-name: floating1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .pic2{
     position: absolute;
@@ -321,6 +337,9 @@ body{
     right:0px;
     left:410px;
     bottom:0px;
+    animation-name: floating2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .pic3{
     position: absolute;
@@ -328,6 +347,9 @@ body{
     right:0px;
     left:625px;
     bottom:0px;
+    animation-name: floating1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .pic4{
     position: absolute;
@@ -335,6 +357,9 @@ body{
     right:0px;
     left:810px;
     bottom:0px;
+    animation-name: floating2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .pic5{
     position: absolute;
@@ -342,6 +367,9 @@ body{
     right:0px;
     left:110px;
     bottom:0px;
+    animation-name: floating2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .pic6{
     position: absolute;
@@ -349,6 +377,9 @@ body{
     right:0px;
     left:435px;
     bottom:0px;
+    animation-name: floating1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .pic7{
     position: absolute;
@@ -356,13 +387,18 @@ body{
     right:0px;
     left:640px;
     bottom:0px;
+    animation-name: floating2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .pic8{
     position: absolute;
     top:450px;
     right:0px;
     left:885px;
-    bottom:0px;
+    bottom:0px;animation-name: floating1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 
