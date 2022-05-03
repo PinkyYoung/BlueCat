@@ -156,10 +156,10 @@
 <!-- 校史導覽數據遞增 -->
     <script>
         // 第一個數字遞增
-        const counterUp = window.counterUp.default
-        const callback = entries => {
+        let counterUp = window.counterUp.default
+        let callback = entries => {
             entries.forEach( entry => {
-                const el = entry.target
+                let el = entry.target
                 if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
                     counterUp( el, {
                         duration: 5000,
@@ -169,15 +169,15 @@
                 }
             } )
         }
-        const IO = new IntersectionObserver( callback, { threshold: 1 } )
-        const el = document.querySelector( '.counter1' )
+        let IO = new IntersectionObserver( callback, { threshold: 1 } )
+        let el = document.querySelector( '.counter1' )
         IO.observe( el )
 
        // 第二個數字遞增
-       const counterUp = window.counterUp.default
-        const callback = entries => {
+       let counterUp = window.counterUp.default
+        let callback = entries => {
             entries.forEach( entry => {
-                const el = entry.target
+                let el = entry.target
                 if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
                     counterUp( el, {
                         duration: 5000,
@@ -187,8 +187,8 @@
                 }
             } )
         }
-        const IO = new IntersectionObserver( callback, { threshold: 1 } )
-        const el = document.querySelector( '.counter2' )
+        let IO = new IntersectionObserver( callback, { threshold: 1 } )
+        let el = document.querySelector( '.counter2' )
         IO.observe( el )
         
        
