@@ -62,10 +62,15 @@ body{
 
 /* banner */
 .banner{
-    background-image: url(../img/mainpage/banner_1.png);
+    background-image: url(../img/mainpage/banner1.png);
     background-size: cover;
     width: 1135px;
     height: 638px;
+}
+
+.banner img{
+    width: 18%;
+    display: block;
 }
 
 /* 最新活動 */
