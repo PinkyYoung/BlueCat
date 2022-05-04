@@ -89,7 +89,7 @@
             <ul class="main_right">
                 <li>
                     <h1>就業率</h1>
-                    <h2 class="counter1">98%</h2>
+                    <h2 class="counter">98%</h2>
                     <h3>畢業即就業 ，統計至2021年</h3>
                 </li>
                 <li>
@@ -99,7 +99,7 @@
                 </li>
                 <li>
                     <h1>畢業巫師人數</h1>
-                    <h2 class="counter3">18962</h2>
+                    <h2 class="counter3">8962</h2>
                     <h3>創校350年巫師校友遍及世界</h3>
                 </li>
             </ul>
@@ -155,44 +155,31 @@
     </div>
 <!-- 校史導覽數據遞增 -->
     <script>
-        // 第一個數字遞增
-        let counterUp = window.counterUp.default
-        let callback = entries => {
-            entries.forEach( entry => {
-                let el = entry.target
-                if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-                    counterUp( el, {
-                        duration: 5000,
-                        delay: 16,
-                    } )
-                    el.classList.add( 'is-visible' )
-                }
-            } )
-        }
-        let IO = new IntersectionObserver( callback, { threshold: 1 } )
-        let el = document.querySelector( '.counter1' )
-        IO.observe( el )
+       
+        const counterUp = window.counterUp.default
 
-       // 第二個數字遞增
-       let counterUp = window.counterUp.default
-        let callback = entries => {
+        const callback = entries => {
             entries.forEach( entry => {
-                let el = entry.target
+                const el = entry.target
                 if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
                     counterUp( el, {
-                        duration: 5000,
-                        delay: 16,
+                        duration: 3000,
+                        delay: 20,
                     } )
                     el.classList.add( 'is-visible' )
                 }
             } )
         }
-        let IO = new IntersectionObserver( callback, { threshold: 1 } )
-        let el = document.querySelector( '.counter2' )
+
+        const IO = new IntersectionObserver( callback, { threshold: 1 } )
+
+        const el = document.querySelector( '.counter' )
+        const el2 = document.querySelector( '.counter2' )
+        const el3 = document.querySelector( '.counter3' )
         IO.observe( el )
-        
-       
-       
+        IO.observe( el2 )
+        IO.observe( el3 )
+ 
     </script>
 
 </body>
