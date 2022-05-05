@@ -60,17 +60,69 @@ body{
     font-weight: bold;
 }
 
-/* banner */
-.banner{
-    background-image: url(../img/mainpage/banner1.png);
-    background-size: cover;
+/* banner 輪播圖 */
+#sliderBoard{                      /*div*/
+    width: 100%;
+    overflow: hidden;
+}                     
+
+#banner_container{               /*ul*/
     width: 1135px;
     height: 638px;
+    text-align: center;
+    position: relative;
 }
 
-.banner img{
+#banner_container img{              /*藍色圓角圖*/
     width: 18%;
     display: block;
+}
+
+#banner_container li{               /*li*/
+    float: left;
+}
+
+.banner1{
+    background-image: url(../img/mainpage/banner1.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner2{
+    background-image: url(../img/mainpage/banner4.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner3{
+    background-image: url(../img/mainpage/banner3.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* 輪播圖_圓圈圈 */
+#banner_button{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    margin-top: -50px;
+}
+
+#banner_button li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+    margin: 10px;
+}
+
+#banner_button li.clickme{
+    background-color: #888;
 }
 
 /* 最新活動 */

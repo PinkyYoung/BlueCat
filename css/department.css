@@ -140,7 +140,6 @@ body{
     perspective: 500px;
     width: 284px;
     position: relative;
-    transition: 2s;
 }
 
 .red1_front{
@@ -153,6 +152,7 @@ body{
 .red1_back{
     position: absolute;
     transform: rotateY(-180deg);
+    /* transform: translateZ(-360px); */
     backface-visibility: hidden;
     transition: 0.8s;
 }
