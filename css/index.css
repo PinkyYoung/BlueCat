@@ -119,10 +119,11 @@ body{
     background-color: #ddd;
     display: inline-block;
     margin: 10px;
+    cursor: pointer;
 }
 
 #banner_button li.clickme{
-    background-color: #888;
+    background-color: #BD9F6D;
 }
 
 /* 最新活動 */
