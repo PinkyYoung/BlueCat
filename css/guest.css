@@ -46,7 +46,7 @@ body{
 }
 
   /* 選單列 */
-.nav {
+  .nav {
     grid-area: nav; 
     width: 950px;
     padding-top: 30px;
@@ -73,7 +73,36 @@ body{
     color: #BD9F6D;
     text-align: center;
     font-weight: bold;
+    position: relative;
 }
+
+.navbar_main::before{
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    left: 50px;
+    bottom: 15px;
+    width: 60px;
+    height: 1px;
+    background-color: white;
+    transform: scaleX(0);
+}
+
+.navbar_inner{
+    border: 2px solid #BD9F6D;
+    box-sizing: border-box;
+    display: block;
+    margin-top: -5px;
+    background-color:#151A2D;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+.navbar_inner a{
+    width: 160px;
+}
+
 /* 任務看板Banner */
 .banner {
     grid-area: banner;
@@ -421,4 +450,13 @@ body{
 .navbar a:hover{
     color: white;
     transform: scale(1.2);
+}
+
+.navbar :nth-child(5):hover .navbar_inner{
+    display: block;
+    opacity: 0.8;
+}
+
+.navbar_main:hover:before{
+    transform: scaleX(1);
 }
