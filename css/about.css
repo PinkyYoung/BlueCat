@@ -54,62 +54,62 @@ body{
   }
   
     /* 選單列 */
-    .nav {
-        grid-area: nav; 
-        width: 950px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin-left: auto;
-    }
-    
-    .navbar{
-        display: flex;
-        background-image: url(../img/about/nav.png);
-        background-repeat: no-repeat;  
-        background-size: contain;
-        justify-content: flex-end;
-    }
-    
-    .navbar li{
-        flex-grow: 1;
-    }
-    
-    .navbar a{
-        display: block;
-        line-height: 50px;
-        text-decoration: none;
-        color: #BD9F6D;
-        text-align: center;
-        font-weight: bold;
-        position: relative;
-    }
-    
-    .navbar_main::before{
-        content: "";
-        position: absolute;
-        transition: 0.3s;
-        left: 50px;
-        bottom: 15px;
-        width: 60px;
-        height: 1px;
-        background-color: white;
-        transform: scaleX(0);
-    }
-    
-    .navbar_inner{
-        border: 2px solid #BD9F6D;
-        box-sizing: border-box;
-        display: block;
-        margin-top: -5px;
-        background-color:#151A2D;
-        position: absolute;
-        z-index: 2;
-        display: none;
-    }
-    
-    .navbar_inner a{
-        width: 160px;
-    }
+  .nav {
+    grid-area: nav; 
+    width: 950px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+}
+
+.navbar{
+    display: flex;
+    background-image: url(../img/about/nav.png);
+    background-repeat: no-repeat;  
+    background-size: contain;
+    justify-content: flex-end;
+}
+
+.navbar li{
+    flex-grow: 1;
+}
+
+.navbar a{
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    color: #BD9F6D;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar_main::before{
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    left: 50px;
+    bottom: 15px;
+    width: 60px;
+    height: 1px;
+    background-color: white;
+    transform: scaleX(0);
+}
+
+.navbar_inner{
+    border: 2px solid #BD9F6D;
+    box-sizing: border-box;
+    display: block;
+    margin-top: -5px;
+    background-color:#151A2D;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+.navbar_inner a{
+    width: 160px;
+}
 
   /* 關於我們Banner */
 .banner {
