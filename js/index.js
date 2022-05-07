@@ -1,4 +1,4 @@
-// 
+
 $(function(){
     let divWidth = $('#sliderBoard').width();
     let imgCount = $('#banner_container li').length;
