@@ -110,3 +110,7 @@ small_img_5.addEventListener("click", function(){
         <a href="#">接受任務</a>
     </div>`
 });
+
+$('.toTop').click(function(){
+    $('html,body').animate({scrollTop: 0},500)
+})
