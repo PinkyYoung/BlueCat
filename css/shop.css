@@ -124,6 +124,8 @@ body{
 }
 .main_top a{
     text-decoration: none;
+    position: relative;
+    display: block;
 }
 .main_top img{
     width: 10px;
@@ -131,12 +133,37 @@ body{
     margin: 0 15px;
 }
 .main_top h5{
-    font-size: 18px;
-    color: #BD9F6D; 
+    color: #BD9F6D;
+    font-weight: bold;
 }
+
+.main_top h5::after{
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    left: 0px;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: #BD9F6D;
+    transform: scaleX(0);
+}
+
 .main_top h6{
-    font-size: 18px;
     color: white;
+    font-weight: bold;
+}
+
+.main_top h6::after{
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    left: 0px;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    transform: scaleX(0);
 }
 
 /* 商品欄位 */
@@ -398,5 +425,24 @@ body{
 }
 
 .navbar_main:hover:before{
+    transform: scaleX(1);
+}
+
+/* 導覽列hover */
+.main_top h5:hover{
+    color: #BD9F6D;
+    transform: scale(1.2);
+}
+
+.main_top h6:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+.main_top h5:hover:after{
+    transform: scaleX(1);
+}
+
+.main_top h6:hover:after{
     transform: scaleX(1);
 }
