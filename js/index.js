@@ -36,8 +36,16 @@ $(function(){
         $('#banner_button').find(`li:nth-child(${val+1})`).addClass('clickme')
     }
 
-    
+   
+    // 套件aos
+            AOS.init();
+ 
 });
+
+// scrollTop
+$('.toTop').click(function(){
+    $('html,body').animate({scrollTop: 0},500)
+})
 
 
 
