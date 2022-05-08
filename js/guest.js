@@ -111,6 +111,7 @@ small_img_5.addEventListener("click", function(){
     </div>`
 });
 
+// scrollTop
 $('.toTop').click(function(){
     $('html,body').animate({scrollTop: 0},500)
 })
