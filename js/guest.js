@@ -22,7 +22,7 @@ small_img_1.addEventListener("click", function(){
     <div>
         <ul>
             <li><h2>獎勵 :</h2></li>
-            <li><img class="coin"src="img/quest/coin.png" alt=""></li>
+            <li><img class="money"src="img/quest/coin.png" alt=""></li>
             <li><span>50</span></li>
         </ul>
         <h3>我的貓貓不見啦!!</h3>
@@ -42,7 +42,7 @@ small_img_2.addEventListener("click", function(){
     <div>
         <ul>
             <li><h2>獎勵 :</h2></li>
-            <li><img class="coin"src="img/quest/coin.png" alt=""></li>
+            <li><img class="money"src="img/quest/coin.png" alt=""></li>
             <li><span>100</span></li>
         </ul>
         <h3>請幫我占卜一下台積電</h3>
@@ -62,7 +62,7 @@ small_img_3.addEventListener("click", function(){
     <div>
         <ul>
             <li><h2>獎勵 :</h2></li>
-            <li><img class="coin"src="img/quest/coin.png" alt=""></li>
+            <li><img class="money"src="img/quest/coin.png" alt=""></li>
             <li><span>160</span></li>
         </ul>
         <h3>我的寵物貓頭鷹需要一個男朋友</h3>
@@ -82,7 +82,7 @@ small_img_4.addEventListener("click", function(){
     <div>
         <ul>
             <li><h2>獎勵 :</h2></li>
-            <li><img class="coin"src="img/quest/coin.png" alt=""></li>
+            <li><img class="money"src="img/quest/coin.png" alt=""></li>
             <li><span>120</span></li>
         </ul>
         <h3>書本自燃事件</h3>
@@ -101,7 +101,7 @@ small_img_5.addEventListener("click", function(){
     <div>
         <ul>
             <li><h2>獎勵 :</h2></li>
-            <li><img class="coin"src="img/quest/coin.png" alt=""></li>
+            <li><img class="money"src="img/quest/coin.png" alt=""></li>
             <li><span>200</span></li>
         </ul>
         <h3>疑似假冒巫師事件</h3>
