@@ -479,6 +479,39 @@ body{
     margin-bottom: 30px;
 }
 
+.toTop{
+    /* outline: 1px solid red; */
+    border: 1px solid #BD9F6D;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color:#232845;
+    position: fixed;
+    right: 25px;
+    bottom: 40px;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: scale1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.toTop_pic{
+    /* outline: 1px solid orange; */
+    width: 40px;
+    height: 56px;
+}
+
+@keyframes scale1 {
+    0% { transform: scale(0.8); }
+    50%  { transform: scale(0.9); }
+    100%   { transform: scale(0.8); }   
+}
+
+
 
 /* 動畫互動效果 */
 .navbar a:hover{
@@ -512,4 +545,9 @@ body{
 
 .main_top h6:hover:after{
     transform: scaleX(1);
+}
+
+/* scrollTop動畫 */
+.toTop:hover{
+    background-color: #151A2D;
 }

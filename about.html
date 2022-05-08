@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/about.css">
-    <!-- js -->
-    <link rel="stylesheet" href="js/about.js">
-    <!-- counterup -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 套件counterup -->
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
-    <!-- aos -->
+    <!-- 套件aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -249,12 +249,14 @@
 
     </div>
 
+
+
 <!-- scrollTOP -->
     <a href="#" class="toTop">
         <img class="toTop_pic" src="img/about/totop.png" alt="Top">
     </a>
 
-<!-- 校史導覽數據遞增 -->
+<!-- 套件counterup -->
     <script>
        
         const counterUp = window.counterUp.default
@@ -281,9 +283,14 @@
         IO.observe( el2 )
         IO.observe( el3 )
     </script>
+
+    <!-- 套件aos -->
     <script>
         AOS.init();
     </script>
+
+    <!-- js -->
+    <script src="./js/about.js"></script>
     
 
 </body>
