@@ -238,8 +238,10 @@ body{
 .shopmore{
     text-decoration: none;
     display: block;
-    text-align: end; 
+    text-align: end;
+     
 }
+
 
 .list h4{
     font-size: 16px;
@@ -460,6 +462,7 @@ body{
 .navbar_main:hover:before{
     transform: scaleX(1);
 }
+
 
 /* 導覽列hover */
 .main_top h5:hover{
