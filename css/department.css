@@ -197,6 +197,16 @@ body{
     position: relative;
 }
 
+#p1{
+   width: 150px;
+   margin-top: -500px;
+   margin-left: 68px;
+   /* box-shadow: 100px 12px 7px rgba(0, 0, 0, 0.7); */
+   animation-name: scale2;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+
 .red1_front{
     position: absolute;
     transform: rotateY(0deg);
@@ -468,6 +478,11 @@ body{
     100%   { transform: scale(0.8); }   
 }
 
+@keyframes scale2 {
+    0% { transform: scale(1.15); }
+    50%  { transform: scale(1.2); }
+    100%   { transform: scale(1.15); }   
+}
 
 /* 動畫互動效果 */
 .navbar a:hover{
