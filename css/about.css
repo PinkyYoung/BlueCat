@@ -266,8 +266,9 @@ body{
     font-weight: bold;
     color:#BD9F6D;
     text-decoration: none;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
+    margin-right: 10px;
     line-height: 16px;
     float: right;
     display: block;
@@ -672,6 +673,10 @@ body{
 
 .navbar_main:hover:before{
     transform: scaleX(1);
+}
+
+.main_left a:hover{
+    color: white;
 }
 
 .main_left a:hover:after{

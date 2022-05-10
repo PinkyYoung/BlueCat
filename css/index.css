@@ -502,7 +502,6 @@ body{
 
 .news a:hover{
     color: white;
-    transform: scale(1.2);
 }
 
 .news a:hover:after{

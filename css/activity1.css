@@ -320,8 +320,6 @@ body{
 .bottom li{
     width: 545px;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
     outline: 0.5px solid #BD9F6D;
     background-color: #151A2D;
     box-sizing: border-box;
@@ -350,15 +348,28 @@ body{
 }
 
 .bottom a{
-    width: 95px;
     font-size: 16px;
     color: #BD9F6D;
     font-weight: bold;
-    display: inline-block;
+    display: block;
     text-decoration: none;
-    align-self: flex-end;
     margin-top: 30px;
     margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    float: right;
+}
+
+.bottom a::after{
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    left: 0px;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: #BD9F6D;
+    transform: scaleX(0);
 }
 
  /* Footer */
@@ -493,6 +504,14 @@ body{
 }
 
 .navbar_main:hover:before{
+    transform: scaleX(1);
+}
+
+.bottom a:hover{
+    color: white;
+}
+
+.bottom a:hover:after{
     transform: scaleX(1);
 }
 
