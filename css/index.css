@@ -279,13 +279,15 @@ body{
 }
 
 .news a{
-    font-size: 16px;
     font-weight: bold;
     color:#BD9F6D;
     text-decoration: none;
     margin-top: 30px;
     margin-bottom: 30px;
+    line-height: 16px;
     float: right;
+    display: block;
+    position: relative;
 }
 
 .news a::after{
@@ -496,6 +498,11 @@ body{
 
 .navbar_main:hover:before{
     transform: scaleX(1);
+}
+
+.news a:hover{
+    color: white;
+    transform: scale(1.2);
 }
 
 .news a:hover:after{
